@@ -1,0 +1,44 @@
+#sun{
+    
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: radial-gradient( rgb(255, 115, 0), rgb(234, 162, 28),rgb(247, 199, 58));
+    position: absolute;
+    animation: revolve 5s linear infinite;
+
+
+   
+}
+#space{
+    width: 100vw;/*100 verticalwidth to cover entire screen vertically */
+    height: 100vh;/*100 verticalhorizontal to cover entire screen vertically */
+    display:flex;/*it gives freedom to move things inside the container*/
+    align-items: center;/*it aligns things in center vertically*/
+    justify-content: center;/*it aligns things in center horizontally*/
+}
+#earth{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    animation: revolve 5s linear infinite;
+
+}
+#moon{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(172, 172, 184);
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+@keyframes revolve{
+    0%{
+        transform: rotate(360deg);
+    }
+}

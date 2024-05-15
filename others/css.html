@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        label{
+            color: #000;
+            background-color: rgb(82, 135, 181);
+            
+        }
+        body{
+            background-color: rgb(154, 163, 163);
+            padding: 10%;
+            }        
+        input[type="text"]{
+            background-color: rgb(232, 238, 243);
+            border-color: black;
+            border-radius: 1px,1px;
+            width: 100%;
+        }
+        input[type="submit"]:hover
+        {
+            width: 20%;
+        background-color: red;
+        }
+        div{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action=" ">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <label for="country">Country Names</label>
+            <select name="country" id="country">
+               <option value="india">India</option>
+               <option value="us">US</option>
+               <option value="uk">UK</option>
+
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+      
+
+     <form action="" method="post" name="ConceptLern" align="center">
+         <textarea name="testarea" rows="10" cols="30">
+          THis is a paragraph , you can enter multiple lies.
+         </textarea>
+          <br>
+           <!-- read-only (sent with submission) , disabled (not sent with sent) -->
+           <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="prashant" readonly>
+          <label for="pin">First name:</label><br> 
+          <input type="text" id="fname" name="fname" value="prashant" disabled>
+          <!-- size : visible width, maxlength= # of charactors --><br>
+           <label for="pin">Pin:</label> 
+          <input type="number" id="pin" name="pin" maxlength="4" size="4"><br>
+         <!-- Required : filled during submission -->
+           <label for="username">Username:</label> 
+          <input type="text" id="username" name="username" required><br> 
+
+          <!-- step : -->  <br>
+           <label for="points">Steps:</label>
+          <input type="number" id="points" name="points" step="3"> 
+  <br>
+         <!--checkbox: select ZERO or MORE options -->
+           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+           <label for="vehicle1"> I have a bike</label><br>
+           <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+           <label for="vehicle2"> I have a car</label><br>
+      
+          <br>
+            <!-- Drop-down-list(size,multiple) -->
+            <label for="cars">Chose a car</label> 
+            <select name="cars" id="cars"  size="2" multiple>
+              <option value="volvo">Volvo</option>
+              <option value="Mahindra">TUV</option>
+              <option value="Toyota">Innova</option>
+            </select>
+           <br>
+            <!-- Data List : List of predefined options for an input -->
+            <input  list="subjects">
+             <datalist id="subjects">
+              <option value="WD"></option>
+              <option value="DBMS"></option>
+             </datalist>
+             <br>
+            <!-- fieldset: group related data -->
+         <fieldset>
+            <legend>User Information </legend>
+             <input type="text" id="fname" name="fname" value="First Name"><br>
+             <input type="text" id="lname" name="lname" value="Last Name">
+         </fieldset>
+
+          <!-- Type color --> <br>
+          <label for="favcolor">Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor"> <br> 
+
+          
+          
+
+          <!-- type=date(min,max) , time --> <br>
+          <!-- <label for="Date">Birthday:</label>
+          <input type="date" id="Date" name="date" > <br>
+
+          <label for="appt">Select a time:</label> <br>
+          <input type="time" id="appt" name="appt"> <br>
+
+          <input type="datetime-local" id="datetimetime" name="datetime"> <br>
+          <input type="month" id="month" name="month"> <br>
+
+          <label for="week">Select a week:</label> <br>
+          <input type="week" id="week" name="week"> -->
+          
+
+          <!-- type =image --><br>
+          <!-- <input type="image" src="demo1.png" alt="Submit" width="48" height="48">
+            type= file , multiple , url--> <br> 
+          <!-- <label for="file">Select a file:</label>
+          <input type="file" id="1" name="file" multiple> <br>
+
+          <label for="home"> Homepage:</label> <br>
+          <input type="url" id="home" name="home" multiple>   -->
+
+          <!-- Hidden field --> <br>
+          <!-- <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <input type="hidden" id="Id" name="Id" value="348">
+           -->
+
+         <!-- Number, range : min, max, size --> <br>
+         <!-- <label for="Quantity">Quantity</label>
+         <input type="number" id="Quantity" name="Quantity" min="1" max="101" step="10" > <br> <br>
+         <input type="range" id="vol" name="vol" min="0" max="100"> -->
+
+         <!-- search --> <br>
+         <!-- <label for="search">Search </label>
+         <input type="search" id="search" name="search"> 
+        <br><br>
+        <input type="submit" value="Submit"> <input type="reset"> 
+
+    </form>
+    
+</body>
+</html>
