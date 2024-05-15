@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang                  = "en">
+<head>
+    <meta charset           = "UTF-8">
+    <meta name              = "viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            padding-left: 0;
+            float: left;
+            text-align: center;
+        }
+        input{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>CREATE YOUR ACCOUNT</h1>
+    <form action            = "">
+        Name                : <input type="text" id="name" placeholder="enter your name"><br><br>
+        Email               : <input type="email" id="email" placeholder="enter your email address">        <br><br>
+        Set Password        : <input type="password" id="pass" placeholder="Set a password"><br><br>
+        Confirm Password    : <input type="password" id="password" placeholder="confirm your password"><br><br>
+        <input type="button" name="button" id="button" value="button">
+    </form>
+    <script>
+        function Create(){
+            var name        = document.getElementById("name").value;
+            var email       = document.getElementById("email").value;
+            var pass        = document.getElementById("pass").value;
+            var button      = document.getElementById("name").value;
+
+            if( name=="" || email=="" || pass=="" || password=="" ){
+                alert("pleas eneter value");
+            }
+            else if(name != String){
+                alert("please enter a string as a name");
+            }
+            else if(pass != password){
+                alert("enter same passwoed");
+            }
+            else if(pass<6 && pass>8){
+                alert("please enter a pass of 6 to 8 characters");
+            }
+            else{
+                document.write("account created successfully");
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

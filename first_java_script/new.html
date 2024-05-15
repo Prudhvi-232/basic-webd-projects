@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Grade: <input type="text" id="grade"><br>
+        <button id="buttun" onclick="perf()">performance</button>
+
+        
+    </form>
+    <script>
+        function perf(){
+            var g=document.getElementById("grade").value;
+            switch(g) {
+                case "A+" :
+                document.write("Extradinory");
+                break;
+                case "A" :
+                document.write("excellent");
+                break;
+                case "B+":
+                document.write("very good")
+                break;
+                case "B":
+                document.write("good")
+                break;
+                case "C":
+                document.write("Average")
+                break;
+                case "D":
+                document.write("poor")
+                break;
+                case "E":
+                document.write("not satisfactory")
+                break;
+                default:
+                document.write("Invalid grade");
+                
+                }                
+
+            }
+        
+
+    </script>
+</body>
+</html>

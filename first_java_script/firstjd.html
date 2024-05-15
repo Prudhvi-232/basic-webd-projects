@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="login" onsubmit="return formvalidate()">
+        <label for="username">UserName</label>
+        <input type="text" name="uname" id="username"> <br> <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <div id="len"></div>
+    <script>
+        function formvalidate() {
+            var user = document.login.uname.value;
+            var pass = document.login.password.value;
+            var len = pass.length;
+
+            if (user === "" || user === null) {
+                alert("The username is empty.");
+                return false;
+            } else if (len < 8) {
+                alert("Password should be at least 8 characters long");
+                return false;
+            }
+
+            return true; 
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="login">
+        <label for="username">UserName</label>
+    <input type="text" name="uname" id="username"> <br> <br>
+    <label for="password">password</label>
+    <input type="text" name="password" id="password"><br><br>
+     
+    <input type="submit" value="submit" onclick="formvalidate()">
+    </form>
+    <script>
+        function formvalidate(){
+            var user=document.login.uname.value;
+            var pass=document.getElementsByName("password");
+            document.getElementById("len").innerHTML=pass.length();
+        
+              if(user == "" || user == null){
+                alert("the username is empty.");
+                return false;
+            }
+            else if(pass.length() < 8){
+                alert("Password should be atleast 8 characters long");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html> -->
+
