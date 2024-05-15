@@ -1,0 +1,4 @@
+Design the Spring Boot RESTs API for Users using ArrayList<>() in user services.  Write appropriate Model , controller  and service for following 3 APIs
+1) Get All Users
+2) Get users by user name (not by userId)
+3)  delete the selected role by userId.

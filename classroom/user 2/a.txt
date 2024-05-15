@@ -1,0 +1,5 @@
+place these files in different packages.
+Run as spring Boot Application and hit following GET API calls through ARC / Postman
+
+1) http://localhost:8085/users
+2) http://localhost:8085/users/0
