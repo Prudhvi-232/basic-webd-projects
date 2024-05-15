@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <!-- Required meta tags -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <form action="" name="login">
+        <div class="float-floating">
+          <br>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="name" />
+        </div>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" /><br />
+        <input type="submit" value="submit" onclick="formvalidate()" />
+      </form>
+
+      <script>
+        function formvalidate() {
+          var user = document.login.username.value;
+          var pass = document.getElementsByName("password");
+
+          if (user == "" || user == null) {
+            alert("The username is empty");
+            return false;
+          } else if (pass.length < 8) {
+            alert("length should be minimum 8");
+            return false;
+          }
+        }
+      </script>
+    </header>
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

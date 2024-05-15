@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            align-items: center;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Your Account</h1><br>
+    <form class="form">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="enter your name" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Enter Your Email id" name="email" id="email"><br>
+        <label for="pasword">Set Password:</label>
+        <input type="password" placeholder="Set a password" name="password" id="password"><br>
+        <label for="Cpassword">Confirm Password:</label>
+        <input type="password" placeholder="confirm your password" name="Cpassword" id="Cpassword"><br>
+        <input type="submit" value="Create" onclick="formvalidate()">
+    </form>
+    <script>
+        function formvalidate(){
+            n=document.getElementById("name").form.name.value;
+            e=document.getElementById("email").form.email.value;
+            p=document.getElementById("password").form.password.value;
+           cp=document.getElementById("Cpassword").form.Cpassword.value;
+           if ( n=="" || e =="" || p=="" || cp=="" ) {
+            alert("enter appropriate data");
+            }
+           
+           else if(p!=cp) {
+            alert("Password and Confirm Password does not match!");
+            }
+           else if(document.getElementById("password").value.length > 12 ) {
+            alert("Your password should be less than or equal to 12 characters long.");
+            }
+           else if(document.getElementById("password").value.length < 6 ) {
+            alert("Your password should be more than or equal to 6 characters long.");
+        
+            }
+           else{
+            alert("your account is successfully created");
+        }
+        
+    }
+
+           
+
+       
+
+        
+    </script>
+</body>
+</html>

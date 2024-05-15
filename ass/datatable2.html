@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table Example</title>
+  <!-- Include necessary CSS and JS files for DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.4/css/buttons.dataTables.min.css">
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <!-- Include DataTables buttons for PDF and Excel export -->
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.0.4/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.0.4/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+</head>
+<body>
+
+<!-- Create a table with an ID for DataTables to target -->
+<table id="myDataTable" class="display">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Enrollment No.</th>
+      <th>Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Your objects will be dynamically added here -->
+  </tbody>
+</table>
+
+<script>
+  // Define a class for the objects
+  class Student {
+    constructor(name, age, enrollmentNo, fee) {
+      this.name = name;
+      this.age = age;
+      this.enrollmentNo = enrollmentNo;
+      this.fee = fee;
+    }
+  }
+
+  // Create an array of objects
+  const students = [
+    new Student("John Doe", 20, "EN001", 500),
+    new Student("Jane Smith", 22, "EN002", 600),
+    new Student("Bob Johnson", 21, "EN003", 550),
+    new Student("Alice Brown", 23, "EN004", 700),
+    new Student("Charlie Davis", 19, "EN005", 450),
+  ];
+
+  // Populate the table with data
+  const dataTable = $('#myDataTable').DataTable({
+    data: students,
+    columns: [
+      { data: 'name' },
+      { data: 'age' },
+      { data: 'enrollmentNo' },
+      { data: 'fee' }
+    ],
+    // Enable DataTables features - pagination, search
+    paging: true,
+    searching: true,
+    // Enable DataTables buttons for PDF and Excel export
+    dom: 'Bfrtip',
+    buttons: [
+      'excelHtml5',
+      'pdfHtml5'
+    ]
+  });
+</script>
+
+</body>
+</html>
