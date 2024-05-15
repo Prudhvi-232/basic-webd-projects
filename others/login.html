@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>F.C Log In</title>
+</head>
+<body>
+    <section class="wrapper">
+      <div class="form login">
+        <header>Sign Up</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required/>
+          <input type="text" placeholder="Email Address" required/>
+          <input type="password" placeholder="Password" required/>
+          <div class="checkbox">
+            <label for="signupCheck">I accept all terms & conditions</label>
+            <input type="checkbox" id="signupCheck" />
+          </div>
+          <div>
+            <input type="submit" value="SignUp">
+          </div>
+        </form>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"), signupHeader = document.querySelector(".signup header"), loginHeader = document.querySelector(".login header");
+        loginHeader.addEventListener("click", () => { wrapper.classList.add("active"); });
+        signupHeader.addEventListener("click", () => { wrapper.classList.remove("active"); });
+      </script>
+    </section>
+    <script src="./login.js"></script>
+</body>
+</html>
