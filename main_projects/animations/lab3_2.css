@@ -1,0 +1,14 @@
+.shape {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: animation 5s 100;
+    }
+
+@keyframes animation {
+    0% {background-color: blue;top: 0px;left: 0px;clip-path: circle(50% at 50% 50%); border-radius: 50%;}
+    25% {background-color:yellow;top: 0px;left:400px;clip-path: polygon(50% 0%,0% 100%,100% 100%);border-radius: 0%;}
+    50% {background-color:red;top: 400px;left:400px;clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);border-radius: 0%;}
+    75% {background-color:green;top: 400px;left: 0px;clip-path: polygon(50% 0%,100% 38%, 82% 100%, 18% 100%, 0% 38%);border-radius: 0%;}
+    100% {background-color: blue;top: 0px;left: 0px; clip-path: circle(50% at 50% 50%); border-radius: 50%;}
+}
