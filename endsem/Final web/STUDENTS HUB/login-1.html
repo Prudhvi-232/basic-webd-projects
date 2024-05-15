@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login One</title>
+    <link rel="stylesheet" href="./bootstrap-social.css">
+    <link rel="stylesheet" href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./templatemo_style.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Please enter both username and password.');
+                return false;
+            }
+
+            // Password conditions
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return false;
+            }
+
+            // You can add more conditions here if needed (e.g., requiring special characters, numbers, etc.)
+
+            return true;
+        }
+    </script>
+</head>
+<body class="templatemo-bg-gray">
+    <div class="container">
+        <div class="col-md-12">
+            <h1 class="margin-bottom-15">Login</h1>
+            <form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="#" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="control-wrapper">
+                            <label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="control-wrapper">
+                            <label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="checkbox control-wrapper">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="control-wrapper">
+							<a href="./1stweb.html" onclick="return validateForm()">Login</a>
+                            <a href="./forgot-password.html" title="Forgot Password" class="text-right pull-right">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label>Login with: </label>
+                        <div class="inline-block">
+                            <a href="#" title="Facebook"><i class="fa fa-facebook-square login-with"></i></a>
+                            <a href="#" title="Twitter"><i class="fa fa-twitter-square login-with"></i></a>
+                            <a href="#" title="Google Plus"><i class="fa fa-google-plus-square login-with"></i></a>
+                            <a href="#" title="Tumblr"><i class="fa fa-tumblr-square login-with"></i></a>
+                            <a href="#" title="GitHub"><i class="fa fa-github-square login-with"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center">
+                <a href="./create-account.html" title="Create New Account" class="templatemo-create-new">Create new account <i class="fa fa-arrow-circle-o-right"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

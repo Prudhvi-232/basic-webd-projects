@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://st.depositphotos.com/33153422/54687/v/450/depositphotos_546871548-stock-illustration-soundwave-seamless-pattern-curve-waves.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+            color: rgba(12, 2, 43, 0)
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(6, 1, 16, 0.5);
+            z-index: -1;
+        }
+
+        .container {
+            width: 30%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select,
+        input[type="range"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="experience">Overall Experience:</label>
+                <select id="experience" name="experience">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="likes">What aspects did you like the most?</label>
+                <textarea id="likes" name="likes" placeholder="Enter your feedback"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="improvements">What aspects need improvement?</label>
+                <textarea id="improvements" name="improvements" placeholder="Enter your feedback"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="likelihood">How likely are you to use our product/service again?</label>
+                <input type="range" id="likelihood" name="likelihood" min="0" max="10" step="1">
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+            </div>
+            <a href=""><button type="submit">Submit</button></a>
+        </form>
+    </div>
+
+</body>
+
+</html>

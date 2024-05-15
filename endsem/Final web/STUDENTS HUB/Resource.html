@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+            color: whitesmoke;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(13, 1, 32, 0.5);
+            z-index: -1;
+        }
+
+        nav {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 26px;
+            font-size: 26px;
+        }
+
+        nav ul li a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: 'Goblin One', serif;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid rgb(70, 3, 253);
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background: transparent;
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+        #services .box:hover {
+            transition: border-color 0.3s ease;
+            border-color: black;
+            border-style: double;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section id="services-container">
+        <div id="services">
+            <div class="box">
+                <a href="https://www.w3schools.com/" target="_blank"><img src="./w3schools-2048.png" alt="error"></a>
+                <h2 class="h-secondary center">W3 Schools</h2>
+                <p class="center">
+                    W3Schools is an online platform providing tutorials and references for web development languages and
+                    technologies.</p>
+            </div>
+            <div class="box">
+                <a href="https://www.geeksforgeeks.org/courses?source=google&medium=cpc&device=c&keyword=geeksforgeeks&matchtype=e&campaignid=20039445781&adgroup=147845288105&gad_source=1&gclid=CjwKCAiAjrarBhAWEiwA2qWdCD7dl_ZJBdjgpCYti8occj5SqMAwbt0HQ12jDlSN6cUwvQrvbCxDuBoCJbAQAvD_BwE"
+                    target="_blank"> <img src="./GeeksforGeeks.png" width="200" height="10px" " alt=" error"></a>
+                <h2 class="h-secondary center">Geeks for Geeks</h2>
+                <p class="center">GeeksforGeeks is a comprehensive computer science portal offering tutorials, articles,
+                    and resources on various programming topics and algorithms..</p>
+            </div>
+            <div class="box">
+                <a href="https://www.codechef.com/learn"><img src="./Codechef(new)_logo.svg.png" width="300"
+                        alt="error"></a>
+                <h2 class="h-secondary center">codechef</h2>
+                <p class="center">
+                    CodeChef is an online competitive programming platform hosting contests and providing practice
+                    problems fAor algorithmic challenges..</p>
+            </div>
+        </div>
+        <div id="services">
+            <div class="box">
+                <a
+                    href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=zErSluD8o3g&ranMID=47901&ranEAID=zErSluD8o3g&ranSiteID=zErSluD8o3g-D1V.XN7Y4yVjXjtibGw.CQ&gclid=CjwKCAiAjrarBhAWEiwA2qWdCIN2wIbKD4Lg7kydxI_14cZSemlDvvdQPoMa3HIHsvbtUgRHdZrK6hoC8kAQAvD_BwE"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/SoloLearn_logo.svg/1280px-SoloLearn_logo.svg.png"
+                        width="290px" alt="error"></a>
+                <h2 class="h-secondary center">Sololearn</h2>
+                <p class="center">
+                    SoloLearn is a mobile app providing bite-sized lessons for multiple programming languages, ideal for
+                    quick learning on-the-go.</p>
+            </div>
+            <div class="box">
+                <a
+                    href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=zErSluD8o3g&ranMID=47901&ranEAID=zErSluD8o3g&ranSiteID=zErSluD8o3g-D1V.XN7Y4yVjXjtibGw.CQ&gclid=CjwKCAiAjrarBhAWEiwA2qWdCIN2wIbKD4Lg7kydxI_14cZSemlDvvdQPoMa3HIHsvbtUgRHdZrK6hoC8kAQAvD_BwE"><img
+                        src="https://cdn.freebiesupply.com/logos/thumbs/2x/udemy-2-logo.png" width="300"
+                        alt="error"></a>
+                <h2 class="h-secondary center">Udemy</h2>
+                <p class="center">
+                    Udemy offers a wide range of online courses, including coding, taught by experts worldwide, catering
+                    to
+                    various skill levels and interests.</p>
+            </div>
+            <div class="box">
+                <a
+                    href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=zErSluD8o3g&ranMID=47901&ranEAID=zErSluD8o3g&ranSiteID=zErSluD8o3g-D1V.XN7Y4yVjXjtibGw.CQ&gclid=CjwKCAiAjrarBhAWEiwA2qWdCIN2wIbKD4Lg7kydxI_14cZSemlDvvdQPoMa3HIHsvbtUgRHdZrK6hoC8kAQAvD_BwE"><img
+                        src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg"
+                        width="300" alt="error"></a>
+                <h2 class="h-secondary center">FreeCodeCamp </h2>
+                <p class="center">
+                    FreeCodeCamp is a free, interactive platform offering coding challenges and a comprehensive
+                    curriculum for web development.</p>
+            </div>
+        </div>
+            <div id="services">
+            <div class="box">
+                <a href="https://www.w3schools.com/" target="_blank"><img src="./w3schools-2048.png" alt="error"></a>
+                <h2 class="h-secondary center">W3 Schools</h2>
+                <p class="center">
+                    W3Schools is an online platform providing tutorials and references for web development languages and
+                    technologies.</p>
+            </div>
+            <div class="box">
+                <a href="https://www.codechef.com/learn"><img src="./Codechef(new)_logo.svg.png" width="300"
+                        alt="error"></a>
+                <h2 class="h-secondary center">codechef</h2>
+                <p class="center">
+                    CodeChef is an online competitive programming platform hosting contests and providing practice
+                    problems fAor algorithmic challenges..</p>
+            </div>
+            <div class="box">
+                <a href="https://www.geeksforgeeks.org/courses?source=google&medium=cpc&device=c&keyword=geeksforgeeks&matchtype=e&campaignid=20039445781&adgroup=147845288105&gad_source=1&gclid=CjwKCAiAjrarBhAWEiwA2qWdCD7dl_ZJBdjgpCYti8occj5SqMAwbt0HQ12jDlSN6cUwvQrvbCxDuBoCJbAQAvD_BwE"
+                    target="_blank"> <img src="./GeeksforGeeks.png" width="200" height="10px" " alt=" error"></a>
+                <h2 class="h-secondary center">Geeks for Geeks</h2>
+                <p class="center">GeeksforGeeks is a comprehensive computer science portal offering tutorials, articles,
+                    and resources on various programming topics and algorithms..</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
